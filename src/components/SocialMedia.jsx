@@ -17,13 +17,17 @@ const Left = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  
+  
 `
 const Right = styled.div`
   flex: 1;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;  
+  justify-content: center;
+
+ 
 `
 
 const Linked = styled.a`

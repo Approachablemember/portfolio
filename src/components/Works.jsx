@@ -23,6 +23,11 @@ const Container = styled.div`
   display: flex;
   justify-content: space-between;
 
+  @media only screen and (max-width: 768px) {
+    width: 100%;
+    flex-direction: column;
+  }
+
 `
 
 const Left = styled.div`
@@ -30,6 +35,11 @@ const Left = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
+
+  @media only screen and (max-width: 768px) {
+    padding: 20px;
+    justify-content: center;
+  }
 `
 
 const List = styled.ul`
@@ -46,6 +56,11 @@ const ListItem = styled.li`
   -webkit-text-stroke: 1px white;
   position: relative;
 
+  @media only screen and (max-width: 768px) {
+    font-size: 24px;
+    color: white;
+    -webkit-text-stroke: 0 white;
+  }
   &::after {
     content: "${(props) => props.text}";
     position: absolute;

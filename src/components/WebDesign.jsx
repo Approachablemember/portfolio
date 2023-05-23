@@ -8,6 +8,13 @@ const Desc = styled.h2`
   position: absolute;
   bottom: 20px;
   left: 0;
+
+  @media only screen and (max-width: 768px) {
+    
+    bottom: 0;
+    
+    margin: auto;
+  }
 `
 const WebDesign = () => {
     return (

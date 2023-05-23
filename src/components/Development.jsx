@@ -13,6 +13,14 @@ const DescContainer = styled.div`
   position: absolute;
   bottom: 20px;
   left: 0;
+
+  @media only screen and (max-width: 768px) {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+  }
 `
 
 const List = styled.ul`
