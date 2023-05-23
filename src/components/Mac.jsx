@@ -3,7 +3,7 @@ import { useGLTF } from "@react-three/drei";
 
 export default function Mac({ ...props }) {
   const group = useRef();
-  const { nodes, materials } = useGLTF("/mac-draco.glb");
+  const { nodes, materials } = useGLTF("./mac-draco.glb");
   return (
     <group ref={group} {...props} dispose={null} >
       <group position={[0, 2.96, -0.13]} rotation={[Math.PI / 2, 0, 0]}>
